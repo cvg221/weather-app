@@ -17,15 +17,26 @@
                     <h1>
                         Weather Forecast
                     </h1>
-                    <input
-                    type="text"
-                    class="form-control"
-                    id="search-input"
-                    placeholder="Enter a city...">
-                    <button
-                    type="search"
-                    class="btn btn-primary"
-                    id="search-btn"> Search</button>
+                    <form id="search-form" class="mb-3">
+                        <div class="row">
+                            <div class="col-9">
+                                <input
+                                type="search"
+                                placeholder="Enter a city..."
+                                class="form-control"
+                                id="search-input"
+                                autocomplete="off"
+                                />
+                            </div>
+                            <div class="col-3">
+                                <input
+                                type="submit"
+                                value="Search"
+                                class="btn btn-primary"
+                                id="search-btn"/>
+                            </div>
+                        </div>
+                    </form>
                 </div>
                 <small>
                     <a href="https://github.com/cvg221/app" target="_blank">Open-source code</a>
