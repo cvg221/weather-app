@@ -37,6 +37,31 @@
                             </div>
                         </div>
                     </form>
+                    <div class="overview">
+                        <h2 id="current-location"></h2>
+                        <ul>
+                            <li id="last-updated">Last updated: <span id="current-date"></span></li>
+                            <li id="weather-description"></li>
+                        </ul>
+                    </div>
+                    <div class="row">
+                        <div class="col-6">
+                            <div class="clearfix weather-temperature">
+                                <img src="" alt="Clear" id="icon" class="float-left" />
+                                <div class="float-left">
+                                    <strong><span id="temperature"></span>°C</strong>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-6">
+                            <ul>
+                                <li>Feels Like: <span id="feels-like"></span>°C</li>
+                                <li>Humidity: <span id="humidity"></span>%</li>
+                                <li>Wind: <span id="wind"></span>%</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="row forecast" id="forecast"></div>
                 </div>
                 <small>
                     <a href="https://github.com/cvg221/app" target="_blank">Open-source code</a>
