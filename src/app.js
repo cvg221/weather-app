@@ -72,17 +72,48 @@ function currentDateFormat() {
     );
   }
 
-  function updateForecast(){
-      alert("hello");
+  function formatAPITimeStamp(dttime){
+      let timeStamp = dttime;
+      let date = new Date(timeStamp * 1000);
+      let hours = date.getHours();
+      if (hours<10) {
+          hours = `0${hours}`;
+      }
+      let minutes = date.getMinutes();
+      if (minutes<10){
+          minutes=`0${minutes}`;
+      }
+      let formattedTime = `${hours}:${minutes}`
+      return formattedTime;
   }
-  
 
-  let searchCity = document.querySelector("#search-btn");
-  searchCity.addEventListener("click", goToWeatherAPI);
+  function updateForecast(response){
+      let forecastElement = document.querySelector("#forecast");
+      forecastElement.innerHTML = null;
+      let forecast = null;
+
+      for (let index = 0; index < 6; index++) {
+          forecast=response.data.list[index];
+          forecastElement.innerHTML += `
+          <div class="col-2">
+            <h3>
+                ${formatAPITimeStamp(forecast.dt)}
+            </h3>
+            <img src="http://openweathermap.org/img/wn/${forecast.weather[0].icon}@2x.png"/>
+            <div class="weather-forecast-temp">
+                    <span id="max-temp">${Math.round(forecast.main.temp_max)}° </span> |
+                    ${Math.round(forecast.main.temp_min)}°
+            </div>
+        </div>
+          `;
+      }
+  }
 
   let currentLocation = document.querySelector("#current-location");
   currentLocation.innerHTML = geolocation();
-  
+
   let lastUpdate = document.querySelector("#current-date");
   lastUpdate.innerHTML = currentDateFormat();
-  
+
+  let searchCity = document.querySelector("#search-btn");
+  searchCity.addEventListener("click", goToWeatherAPI);

@@ -29,7 +29,7 @@ ul{
 }
 
 strong{
-    font-size:45px;
+    font-size:10px;
     font-weight: 100;
 }
 
@@ -39,6 +39,19 @@ strong{
     line-height: 28px;
     margin-bottom: 0;
 
+}
+
+#icon{
+    display: block;
+    margin: 0 auto;
+}
+
+#metric{
+    font-size:45px;
+}
+
+#max-temp{
+    font-weight: bold;
 }
 
 #temperature{
@@ -57,3 +70,30 @@ strong{
     border-radius: 5px;
     background-image: linear-gradient(-100deg, #fffeff 0%, #d7fffe 100%);
 }
+
+.forecast h3{
+    color: black;
+    font-size: 15px;
+    text-align: center;
+    height: 15px;
+    line-height: 15px;
+    padding-top: 7px;
+}
+
+.forecast img{
+    display: block;
+    margin: 0 auto;
+    height: 48px;
+    width: 48px;
+}
+
+.weather-forecast-temp{
+    text-align: center;
+    color: black;
+    font-size: 13px;
+    font-weight: 400;
+    height: auto;
+    line-height: 15px;
+    white-space: nowrap;
+}
+
