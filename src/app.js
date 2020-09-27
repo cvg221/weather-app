@@ -40,7 +40,6 @@ function currentDateFormat() {
 
     url = `http://api.openweathermap.org/data/2.5/forecast?q=${searchCity}&appid=${apiKey}&units=${unit}`;
     axios.get(url).then(updateForecast);
-
   }
   
   function updateCityAndTemperature(response) {
@@ -117,3 +116,5 @@ function currentDateFormat() {
 
   let searchCity = document.querySelector("#search-btn");
   searchCity.addEventListener("click", goToWeatherAPI);
+
+  

@@ -1,8 +1,5 @@
-body {
-    font-family: Arial, Helvetica, sans-serif;
-}
-
 h1 {
+    color: #ff5722;
     text-align: center;
     font-family: "Permanent Marker", cursive;
     margin-top: 50px;
@@ -11,11 +8,12 @@ h1 {
 
 li {
     list-style: none;
-    color: #132743;
+    color: white;
     font-size: 15px;
     line-height: 19px;
     margin: 0;
     padding: 0;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 
 }
 
@@ -33,12 +31,12 @@ strong{
     font-weight: 100;
 }
 
-#current-city{
-    color: #132743;
-    font-size: 25px;
+#current-location{
+    color: white;
+    font-size: 40px;
     line-height: 28px;
-    margin-bottom: 0;
-
+    margin-bottom: 10px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 
 #icon{
@@ -48,7 +46,10 @@ strong{
 
 #metric{
     font-size:45px;
+    color: white;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
+
 
 #max-temp{
     font-weight: bold;
@@ -56,7 +57,16 @@ strong{
 
 #temperature{
     font-size:45px;
+    color: white;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
 
+#search-input{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+#search-btn{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 
 .app-wrapper{
@@ -68,16 +78,17 @@ strong{
     padding: 20px;
     border: 1px solid #969696;
     border-radius: 5px;
-    background-image: linear-gradient(-100deg, #fffeff 0%, #d7fffe 100%);
+    background-image: linear-gradient(to top, #30cfd0 0%, #330867 100%);
 }
 
 .forecast h3{
-    color: black;
+    color: white;
     font-size: 15px;
     text-align: center;
     height: 15px;
     line-height: 15px;
     padding-top: 7px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 
 .forecast img{
@@ -89,11 +100,11 @@ strong{
 
 .weather-forecast-temp{
     text-align: center;
-    color: black;
+    color: white;
     font-size: 13px;
     font-weight: 400;
     height: auto;
     line-height: 15px;
     white-space: nowrap;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
-
