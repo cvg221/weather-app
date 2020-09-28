@@ -38,7 +38,7 @@ function currentDateFormat() {
   
     axios.get(url).then(updateCityAndTemperature);
 
-    url = `http://api.openweathermap.org/data/2.5/forecast?q=${searchCity}&appid=${apiKey}&units=${unit}`;
+    url = `https://api.openweathermap.org/data/2.5/forecast?q=${searchCity}&appid=${apiKey}&units=${unit}`;
     axios.get(url).then(updateForecast);
   }
   
@@ -98,7 +98,7 @@ function currentDateFormat() {
             <h3>
                 ${formatAPITimeStamp(forecast.dt)}
             </h3>
-            <img src="http://openweathermap.org/img/wn/${forecast.weather[0].icon}@2x.png"/>
+            <img src="https://openweathermap.org/img/wn/${forecast.weather[0].icon}@2x.png"/>
             <div class="weather-forecast-temp">
                     <span id="max-temp">${Math.round(forecast.main.temp_max)}° </span> |
                     ${Math.round(forecast.main.temp_min)}°
