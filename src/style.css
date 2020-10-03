@@ -21,6 +21,12 @@ li:first-letter{
     text-transform: capitalize;
 }
 
+p{ 
+    font-size:20px;
+    color: white;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
 ul{
     margin:0;
     padding: 0;
@@ -44,8 +50,8 @@ strong{
     margin: 0 auto;
 }
 
-#metric{
-    font-size:45px;
+#celsius{
+    font-size:25px;
     color: white;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
@@ -57,6 +63,12 @@ strong{
 
 #temperature{
     font-size:45px;
+    color: white;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+#farenheit{
+    font-size:25px;
     color: white;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
