@@ -58,7 +58,8 @@ function updateCityAndTemperature(response) {
   let humidity=Math.round(response.data.main.humidity);
   let wind=Math.round(response.data.wind.speed);
   let icon = response.data.weather[0].icon;
-  
+  celsiusTemperature = temperature;
+
   h2.innerHTML = city;
   tempElement.innerHTML = temperature;
   weatherDescription.innerHTML = description;
@@ -136,8 +137,6 @@ lastUpdate.innerHTML = currentDateFormat();
 
 let searchCity = document.querySelector("#search-btn");
 searchCity.addEventListener("click", goToWeatherAPI);
-
-var celsiusTemperature = document.querySelector("#temperature").innerHTML;
 
 let celsiusElement = document.querySelector("#celsius");
 celsiusElement.addEventListener("click", conversionToCelsius);
