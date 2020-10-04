@@ -22,7 +22,7 @@ li:first-letter{
 }
 
 p{ 
-    font-size:20px;
+    font-size:25px;
     color: white;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
@@ -79,6 +79,15 @@ strong{
 
 #search-btn{
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.weather-temperature .active {
+    color: rgb(33, 33, 33);
+    cursor: default;
+}
+  
+.weather-temperature .active:hover {
+    text-decoration: none;
 }
 
 .app-wrapper{
